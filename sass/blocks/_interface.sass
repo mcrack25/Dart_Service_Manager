@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,800')
+  
+html
+  font-size: 10px
+
+body
+  font-family: 'Raleway', sans-serif
+  font-weight: 400
+  color: $black
+
+h1,h2,h3,h4,h5,h6
+  font-weight: 800
+  margin: 0
+  padding: 0
+
+h1
+  font-size: 5.5rem
+
+.bs
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15)
+
+.bs2
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2)
+
+.button
+  cursor: pointer
+  border: none
+  border-radius: 3px
+  transition: all 0.3s ease
+
+  &_ghost
+    color: #fff
+    background: transparent
+    border: 1px solid
+    &:hover
+      color: $black
+      background: transparent
+
+  &_black
+    background: $black
+    color: $white
+    &:hover
+      background: lighten($black, 5%)
+      color: $white
+
+  &_white
+    background: $white
+    color: $black
+    &:hover
+      background: darken($white, 5%)
+      color: $black
+
+.logo
+  display: flex
+  align-items: center
+  text-decoration: none
+  &__text-box
+    font-size: 1.5rem
+    margin-left: 10px
+    text-transform: uppercase
+  &__text
+    display: block
+    color: $white
+  &__desc
+    font-weight: 800

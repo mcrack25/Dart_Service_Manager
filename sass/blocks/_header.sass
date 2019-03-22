@@ -1,0 +1,116 @@
+.header
+  background: url("../img/header_bg.jpg") no-repeat
+  background-size: cover
+  padding: 50px 0 180px
+  min-height: 100vh
+
+.offer-wrap
+  margin-top: 25vh
+  &__in
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.offer
+  color: #fff
+  max-width: 580px
+  &__title
+    text-transform: uppercase
+  &__text
+    margin-top: 15px
+    font-size: 1.8rem
+    line-height: 2.2em
+  &__buttons
+    margin-top: 30px
+  &__button
+    @extend .bs
+    padding: 18px 30px
+    font-size: 1.5rem
+    text-transform: uppercase
+    font-weight: bold
+    margin-right: 30px
+    &:last-child
+      margin-right: 0
+
+.video
+  &__player
+    @extend .bs2
+    display: none
+  &__plug
+    @extend .bs2
+    width: 600px
+    height: 320px
+    border-radius: 5px
+    background: url("../img/player_bg.jpg") no-repeat
+    background-size: cover
+    border: 2px solid $black
+    display: flex
+    justify-content: center
+    align-items: center
+  &__icon
+    background: $black
+    border-radius: 5px
+    height: 60px
+    width: 60px
+    color: $white
+    font-size: 2rem
+    text-align: center
+    line-height: 60px
+    cursor: pointer
+    @extend .bs
+    &:hover
+      background: lighten($black, 10%)
+
+@media (max-width: 1199px)
+  .offer-wrap
+    margin-top: 10vh
+    &__in
+      display: flex
+      flex-direction: column
+
+  .offer
+    text-align: center
+
+  .video
+    margin-top: 40px
+
+@media (max-width: 768px)
+  .header
+    padding: 30px 0 80px
+
+  h1
+    font-size: 4rem
+
+  .offer
+    &__text
+      line-height: 1.5em
+    
+    &__button
+      margin-right: 15px
+
+  .video
+    &__player
+      width: 420px
+      height: 224px
+    &__plug
+      width: 420px
+      height: 224px
+
+@media (max-width: 576px)
+  .offer
+    &__buttons
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+    &__button
+      margin-right: 0
+      margin-bottom: 10px
+
+  .video
+    &__player
+      width: 294px
+      height: 156px
+    &__plug
+      width: 294px
+      height: 156px
