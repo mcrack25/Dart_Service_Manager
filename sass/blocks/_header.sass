@@ -34,22 +34,26 @@
 
 .video
   &__player
-    @extend .bs2
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2)
     width: $video-size_w + px
     height: $video-size_h + px
     display: none
   &__plug
-    @extend .bs2
-    width: $video-size_w + px
-    height: $video-size_h + px
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2)
+    position: relative
     border-radius: 5px
-    background: url("../img/player_bg.jpg") no-repeat
-    background-size: cover
     border: 2px solid $black
-    display: flex
-    justify-content: center
-    align-items: center
+    overflow: hidden
+  &__img
+    display: block
+    width: 100%
+    height: 100%
+    max-width: 600px
   &__icon
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
     background: $black
     border-radius: 5px
     height: 60px
@@ -91,15 +95,6 @@
     &__button
       margin-right: 15px
 
-  .video
-    &__player
-      width: $video-t-size_w + px
-      height: $video-t-size_h + px
-    &__plug
-      width: $video-t-size_w + px
-      height: $video-t-size_h + px
-
-
 @media (max-width: 576px)
   .offer
     &__buttons
@@ -110,11 +105,3 @@
     &__button
       margin-right: 0
       margin-bottom: 10px
-
-  .video
-    &__player
-      width: $video-m-size_w + px
-      height: $video-m-size_h + px
-    &__plug
-      width: $video-m-size_w + px
-      height: $video-m-size_h + px

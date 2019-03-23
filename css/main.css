@@ -66,11 +66,6 @@ h1 {
           box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
-.bs2, .video__player, .video__plug {
-  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
-}
-
 .button {
   cursor: pointer;
   border: none;
@@ -258,30 +253,35 @@ h1 {
 }
 
 .video__player {
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
   width: 600px;
   height: 320px;
   display: none;
 }
 
 .video__plug {
-  width: 600px;
-  height: 320px;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
   border-radius: 5px;
-  background: url("../img/player_bg.jpg") no-repeat;
-  background-size: cover;
   border: 2px solid #061e37;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  overflow: hidden;
+}
+
+.video__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
 }
 
 .video__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background: #061e37;
   border-radius: 5px;
   height: 60px;
@@ -332,14 +332,6 @@ h1 {
   .offer__button {
     margin-right: 15px;
   }
-  .video__player {
-    width: 500px;
-    height: 266.66667px;
-  }
-  .video__plug {
-    width: 500px;
-    height: 266.66667px;
-  }
 }
 
 @media (max-width: 576px) {
@@ -358,14 +350,6 @@ h1 {
   .offer__button {
     margin-right: 0;
     margin-bottom: 10px;
-  }
-  .video__player {
-    width: 300px;
-    height: 160px;
-  }
-  .video__plug {
-    width: 300px;
-    height: 160px;
   }
 }
 /*# sourceMappingURL=main.css.map */
