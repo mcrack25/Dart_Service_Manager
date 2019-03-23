@@ -95,7 +95,7 @@ h1 {
 }
 
 .button_black:hover {
-  background: #092b4e;
+  background: #0b3765;
   color: #fff;
 }
 
@@ -105,7 +105,7 @@ h1 {
 }
 
 .button_white:hover {
-  background: #f2f2f2;
+  background: #e6e6e6;
   color: #061e37;
 }
 
@@ -257,6 +257,8 @@ h1 {
 }
 
 .video__player {
+  width: 600px;
+  height: 320px;
   display: none;
 }
 
@@ -318,6 +320,7 @@ h1 {
 @media (max-width: 768px) {
   .header {
     padding: 30px 0 80px;
+    margin: 0 auto;
   }
   h1 {
     font-size: 4rem;
@@ -329,12 +332,12 @@ h1 {
     margin-right: 15px;
   }
   .video__player {
-    width: 420px;
-    height: 224px;
+    width: 500px;
+    height: 266.66667px;
   }
   .video__plug {
-    width: 420px;
-    height: 224px;
+    width: 500px;
+    height: 266.66667px;
   }
 }
 
@@ -356,12 +359,12 @@ h1 {
     margin-bottom: 10px;
   }
   .video__player {
-    width: 294px;
-    height: 156px;
+    width: 300px;
+    height: 160px;
   }
   .video__plug {
-    width: 294px;
-    height: 156px;
+    width: 300px;
+    height: 160px;
   }
 }
 /*# sourceMappingURL=main.css.map */

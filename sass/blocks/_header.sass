@@ -35,11 +35,13 @@
 .video
   &__player
     @extend .bs2
+    width: $video-size_w + px
+    height: $video-size_h + px
     display: none
   &__plug
     @extend .bs2
-    width: 600px
-    height: 320px
+    width: $video-size_w + px
+    height: $video-size_h + px
     border-radius: 5px
     background: url("../img/player_bg.jpg") no-repeat
     background-size: cover
@@ -77,6 +79,7 @@
 @media (max-width: 768px)
   .header
     padding: 30px 0 80px
+    margin: 0 auto
 
   h1
     font-size: 4rem
@@ -90,11 +93,12 @@
 
   .video
     &__player
-      width: 420px
-      height: 224px
+      width: $video-t-size_w + px
+      height: $video-t-size_h + px
     &__plug
-      width: 420px
-      height: 224px
+      width: $video-t-size_w + px
+      height: $video-t-size_h + px
+
 
 @media (max-width: 576px)
   .offer
@@ -109,8 +113,8 @@
 
   .video
     &__player
-      width: 294px
-      height: 156px
+      width: $video-m-size_w + px
+      height: $video-m-size_h + px
     &__plug
-      width: 294px
-      height: 156px
+      width: $video-m-size_w + px
+      height: $video-m-size_h + px
